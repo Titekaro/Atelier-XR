@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/IA.unity
     guid: 7770bdcefdb71584cb1864fc16087184
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Univac.unity
     guid: 5ed7225c7d6b8314188bce347a34ca6e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Macintosh.unity
     guid: 7807e253d13e54248bd8ad5d2f28230e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Compaq.unity
     guid: 631550b2b1efe57489f979b450862dea
   m_configObjects:
