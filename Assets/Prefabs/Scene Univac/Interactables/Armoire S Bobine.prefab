@@ -1,12 +1,66 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6411159366787319891
+--- !u!1 &1369433376422917575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3449623381180414102}
+  - component: {fileID: 2571861170048304661}
+  m_Layer: 0
+  m_Name: Armoire S Bobine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3449623381180414102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369433376422917575}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2136499973881919065}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2571861170048304661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369433376422917575}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8791128, y: 1.7495465, z: 0.84982437}
+  m_Center: {x: -0.0020637214, y: 0.8778261, z: 0.021526784}
+--- !u!1001 &1635606021795094167
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 3449623381180414102}
     m_Modifications:
     - target: {fileID: -8424959010762200882, guid: 8d345cc020def6b46820a450fc5435fe,
         type: 3}
@@ -31,17 +85,17 @@ PrefabInstance:
     - target: {fileID: -8424959010762200882, guid: 8d345cc020def6b46820a450fc5435fe,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8424959010762200882, guid: 8d345cc020def6b46820a450fc5435fe,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8424959010762200882, guid: 8d345cc020def6b46820a450fc5435fe,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8424959010762200882, guid: 8d345cc020def6b46820a450fc5435fe,
         type: 3}
@@ -69,3 +123,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 8d345cc020def6b46820a450fc5435fe,
     type: 3}
+--- !u!4 &2136499973881919065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8424959010762200882, guid: 8d345cc020def6b46820a450fc5435fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1635606021795094167}
+  m_PrefabAsset: {fileID: 0}
