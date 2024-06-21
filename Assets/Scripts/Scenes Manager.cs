@@ -8,11 +8,13 @@ public class ScenesManager : MonoBehaviour {
     [SerializeField] private GameObject panel; 
     private Scene scene;
     private int maxScenes;
-    private int currentSceneNumber = 0; // Define the number of the starting scene
+    private int currentSceneNumber = 1; // Define the number of the starting scene
 
     void Awake() {
         maxScenes = SceneManager.sceneCountInBuildSettings; // Count the number of scenes in the build project
         Debug.Log(maxScenes);
+
+        SwitchScene(currentSceneNumber); // Initialize the first scene where we has to begin
     }
 
     void Start() {
