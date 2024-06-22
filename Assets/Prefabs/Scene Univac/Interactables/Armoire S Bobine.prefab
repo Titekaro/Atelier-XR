@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3449623381180414102}
   - component: {fileID: 2571861170048304661}
+  - component: {fileID: 1795834683856285553}
+  - component: {fileID: 6208446558765364648}
   m_Layer: 0
   m_Name: Armoire S Bobine
   m_TagString: Untagged
@@ -52,8 +54,50 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8791128, y: 1.7495465, z: 0.84982437}
-  m_Center: {x: -0.0020637214, y: 0.8778261, z: 0.021526784}
+  m_Size: {x: 0.8791128, y: 1.1628289, z: 0.84982437}
+  m_Center: {x: -0.0020637214, y: 0.5844673, z: 0.021526784}
+--- !u!65 &1795834683856285553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369433376422917575}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4312505, y: 0.58825934, z: 0.8234916}
+  m_Center: {x: -0.22357735, y: 1.4604304, z: 0.007844806}
+--- !u!65 &6208446558765364648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369433376422917575}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.44429567, y: 0.18721557, z: 0.8247801}
+  m_Center: {x: 0.21497418, y: 1.6604704, z: 0.0068445206}
 --- !u!1001 &1635606021795094167
 PrefabInstance:
   m_ObjectHideFlags: 0
