@@ -28,14 +28,14 @@ public class ScenesManager : MonoBehaviour {
     //TODO: will be different when the frag code will be implemented
     void test() {
         if(panel.tag == "Next") {
-            currentSceneNumber = currentSceneNumber + 1;
+            currentSceneNumber++;
             SwitchScene(currentSceneNumber);
             panel.tag = "Untagged";
         }
     }
 
     // Call the number of the scene to load in addition of the main scene
-    Scene SwitchScene(int sceneNumber) {
+    public Scene SwitchScene(int sceneNumber) {
         var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
 
         if(currentSceneNumber <= maxScenes - 1) {
