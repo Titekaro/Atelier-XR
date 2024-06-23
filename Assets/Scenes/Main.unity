@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 466239517}
   - component: {fileID: 466239516}
   - component: {fileID: 466239518}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
