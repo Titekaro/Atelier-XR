@@ -35,19 +35,22 @@ public class ScenesManager : MonoBehaviour {
     }
 
     // Call the number of the scene to load in addition of the main scene
-    public Scene SwitchScene(int sceneNumber) {
+    public void SwitchScene(int sceneNumber) {
         var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
 
         if(currentSceneNumber <= maxScenes - 1) {
-            scene = SceneManager.LoadScene(sceneNumber, parameters);
+            SceneManager.LoadScene(sceneNumber, parameters);
             SceneManager.UnloadSceneAsync(sceneNumber - 1);
         } else {
-            scene = SceneManager.LoadScene(1, parameters);
+            SceneManager.LoadScene(1, parameters);
             SceneManager.UnloadSceneAsync(maxScenes - 1);
         }
 
         Debug.Log("scene " + scene.name + " loaded");
-        return scene;
+        //return scene;
+    }
 
+    public void QuitGame() {
+        Application.Quit();
     }
 }
