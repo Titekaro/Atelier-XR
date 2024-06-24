@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Next
+  - Hand
+  - Wrist
   layers:
   - Default
   - TransparentFX
