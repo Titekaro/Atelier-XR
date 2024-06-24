@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShowUIInfo : MonoBehaviour
 {
 
-    [SerializeField] private GameObject panelInfo;
+    [SerializeField] private GameObject infoPanel;
 
     void Start() {
         
@@ -16,11 +16,11 @@ public class ShowUIInfo : MonoBehaviour
     }
 
     void OnTriggerEnter() {
-        panelInfo.SetActive(true);
+        infoPanel.SetActive(true);
     }
 
     void OnTriggerExit() {
-        panelInfo.SetActive(false);
+        infoPanel.SetActive(false);
     }
 
 }
