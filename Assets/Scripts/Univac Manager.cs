@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class UnivacManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    private Player playerScript;
+
+    void Awake() {
+        playerScript = GameObject.Find("Scripts Access").GetComponent<Player>();
+        playerScript.ResetPlayerPosition(new Vector3(-7.97f,0f,3.82f));
+    }
+
+    void Start() {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         
     }
 }
