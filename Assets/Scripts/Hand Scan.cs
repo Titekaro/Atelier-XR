@@ -18,6 +18,7 @@ public class HandScan : MonoBehaviour
     }
 
     void OnTriggerEnter() {
+        Debug.Log("collision");
         scenesManagerScript.SwitchScene(3);
     }
 
