@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: fenetre
+    second: {fileID: 2100000, guid: a5ca7064ee98e704cbc9befa51444b27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: mur
     second: {fileID: 2100000, guid: d2ca9698467d7ed499e555683ef6b963, type: 2}
   - first:
