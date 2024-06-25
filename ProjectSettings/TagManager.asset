@@ -7,6 +7,8 @@ TagManager:
   - Next
   - Hand
   - Wrist
+  - Set
+  - NotSet
   layers:
   - Default
   - TransparentFX
