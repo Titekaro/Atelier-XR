@@ -10,6 +10,7 @@ public class PlayerWristManager : MonoBehaviour
     private Scene scene;
     private int maxScenes;
     private int currentSceneNumber;
+    private int test;
 
     void Awake() {
         scenesManagerScript = GameObject.Find("Scripts Access").GetComponent<ScenesManager>(); // Access the wanted script in "Scripts Access"
@@ -22,7 +23,9 @@ public class PlayerWristManager : MonoBehaviour
     void Update() { 
         GoToNextScene();
     }
+
     void GoToNextScene() {
+        var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
         scene = SceneManager.GetActiveScene(); //TODO: only the main scene is active scene as the other are as additive;
         currentSceneNumber = scene.buildIndex; // Check which scene number is active
 
@@ -33,7 +36,7 @@ public class PlayerWristManager : MonoBehaviour
                 scenesManagerScript.SwitchScene(currentSceneNumber + 1);
                 currentSceneNumber++;
             } else {
-                SceneManager.LoadScene(2, LoadSceneMode.Additive);
+                SceneManager.LoadScene(2, parameters);
                 SceneManager.UnloadSceneAsync(maxScenes - 1);
                 currentSceneNumber = 2;
             }

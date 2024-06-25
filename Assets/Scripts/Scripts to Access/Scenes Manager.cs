@@ -21,7 +21,7 @@ public class ScenesManager : MonoBehaviour {
         SceneManager.LoadScene(sceneNumber, parameters);
         SceneManager.UnloadSceneAsync(sceneNumber - 1);
 
-        Debug.Log("scene " + SceneManager.LoadScene(sceneNumber, parameters).name + " loaded");
+        Debug.Log("scene loaded");
     }
 
     public void QuitGame() {
