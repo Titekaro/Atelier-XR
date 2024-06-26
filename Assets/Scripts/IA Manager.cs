@@ -6,9 +6,11 @@ public class IAManager : MonoBehaviour
 {
     private Player playerScript;
 
+    [SerializeField] private GameObject playerPositionResetter;
+
     void Awake() {
         playerScript = GameObject.Find("Scripts Access").GetComponent<Player>();
-        playerScript.ResetPlayerPosition(new Vector3(-2.7f,0f,-1.2f));
+        playerScript.ResetPlayerPosition(playerPositionResetter);
     }
 
     void Start() {

@@ -6,6 +6,7 @@ public class UnivacManager : MonoBehaviour
 {
     private Player playerScript;
 
+    [SerializeField] private GameObject playerPositionResetter;
     [SerializeField] private GameObject bobine;
     [SerializeField] private GameObject perforedCards;
     [SerializeField] private GameObject pressCards;
@@ -13,7 +14,7 @@ public class UnivacManager : MonoBehaviour
 
     void Awake() {
         playerScript = GameObject.Find("Scripts Access").GetComponent<Player>();
-        playerScript.ResetPlayerPosition(new Vector3(-7.97f,0f,3.82f));
+        playerScript.ResetPlayerPosition(playerPositionResetter);
     }
 
     void Start() {
