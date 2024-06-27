@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         //Add the position difference to the position of the player
         player.transform.position += newPosition;
 
-        //Debug.Log("player position reset: " + newPosition);
-        Debug.Log(resetter.transform.position + " " + playerHead.transform.position + " " + newPosition);
+        Debug.Log("player position reset: " + player.transform.position);
+        //Debug.Log(resetter.transform.position + " " + playerHead.transform.position + " " + newPosition);
     }
 }

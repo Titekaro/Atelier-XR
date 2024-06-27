@@ -14,11 +14,10 @@ public class UnivacManager : MonoBehaviour
 
     void Awake() {
         playerScript = GameObject.Find("Scripts Access").GetComponent<Player>();
-        playerScript.ResetPlayerPosition(playerPositionResetter);
     }
 
     void Start() {
-        
+        playerScript.ResetPlayerPosition(playerPositionResetter);
     }
 
     void Update() {
