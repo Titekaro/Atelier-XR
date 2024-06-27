@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.InputSystem;
 
 public class HandScan : MonoBehaviour
 {
     private ScenesManager scenesManagerScript;
-    private XRDirectInteractor hand;
+    private GameObject leftHand;
+    private GameObject rightHand;
 
     void Awake() {
         scenesManagerScript = GameObject.Find("Scripts Access").GetComponent<ScenesManager>(); // Access the wanted script in "Scripts Access"
-        hand = GameObject.Find("Left Controller").GetComponent<XRDirectInteractor>();
+        leftHand = GameObject.Find("Left Controller");
+        rightHand = GameObject.Find("Right Controller");
     }
 
     void Start() {  
@@ -26,16 +26,24 @@ public class HandScan : MonoBehaviour
         //Ajouter detection uniquement quand c'est les mains
         Debug.Log("collision " + other.tag);
 
-        if(other.tag == "Hand") {
-            XRBaseController leftHandController = GameObject.Find("Left Controller").GetComponent<XRBaseController>();
-            if (leftHandController != null) leftHandController.SendHapticImpulse(0.5f, 0.5f);
-            
-            StartCoroutine(DelayAction(5));
-        }
-    }
+        XRBaseController rightHandController = rightHand.GetComponent<XRBaseController>();
+        XRBaseController leftHandController = leftHand.GetComponent<XRBaseController>();
 
-    void OnTriggerExit() {
-        hand.playHapticsOnHoverEntered = false;
+        switch(other.tag) {
+            case "HandRight":
+                if(rightHandController != null) {
+                    rightHandController.SendHapticImpulse(0.5f, 2f);
+                }
+                StartCoroutine(DelayAction(2));
+            break;
+            case "HandLeft":
+                if(leftHandController != null) {
+                    leftHandController.SendHapticImpulse(0.5f, 2f);
+                }
+                StartCoroutine(DelayAction(2));
+            break;
+        }
+
     }
     
     IEnumerator DelayAction(float delayTime) {
