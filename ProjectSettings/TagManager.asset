@@ -5,10 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Next
-  - Hand
   - Wrist
   - Set
   - NotSet
+  - HandRight
+  - HandLeft
   layers:
   - Default
   - TransparentFX
