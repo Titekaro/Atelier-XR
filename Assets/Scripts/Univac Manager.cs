@@ -6,15 +6,23 @@ public class UnivacManager : MonoBehaviour
 {
     private Player playerScript;
     private UnivacSwitchBtn switchBtnScript; // Script to access the switchBtnAnimator
+    private PlayerWristManager wristManagerScript;
 
     [SerializeField] private GameObject playerPositionResetter;
     [SerializeField] private GameObject bobine;
     [SerializeField] private GameObject perforedCards;
     [SerializeField] private GameObject pressCards;
+    [SerializeField] private GameObject wristTrigger;
+    [SerializeField] private GameObject code;
+    [SerializeField] private GameObject errorMessage;
 
     void Awake() {
         playerScript = GameObject.Find("Scripts Access").GetComponent<Player>();
+        wristManagerScript = GameObject.Find("Wrist").GetComponent<PlayerWristManager>();
         switchBtnScript = GameObject.Find("Trieuse_switchBtn").GetComponent<UnivacSwitchBtn>();
+
+        errorMessage.SetActive(false);
+        wristTrigger.SetActive(false);
     }
 
     void Start() {
@@ -28,12 +36,22 @@ public class UnivacManager : MonoBehaviour
 
         if(switchBtnScript.switchBtnAnimator.GetBool("isOn") == true) {
             if(bobine.tag == "Set" && perforedCards.tag == "Set" && pressCards.tag == "Set") {
-                Debug.Log("can get code");
+                errorMessage.SetActive(false);
+                code.SetActive(true);
+                wristTrigger.SetActive(true);
             } else {
-                Debug.Log("can NOT get code");
-                Debug.Log("Vous devz placer les elements pour que ça fonctionne");
+                errorMessage.SetActive(true);
+                code.SetActive(false);
+                wristTrigger.SetActive(false);
             }
         }
+    }
+
+    public void OnCodeFound() {
+        wristManagerScript.CollectCode("Univac");
+
+        // Add haptic impulse
+        // Add switch scene
     }
 
 }
