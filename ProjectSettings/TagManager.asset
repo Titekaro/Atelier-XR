@@ -9,6 +9,7 @@ TagManager:
   - NotSet
   - HandRight
   - HandLeft
+  - SwitchBtn
   layers:
   - Default
   - TransparentFX
