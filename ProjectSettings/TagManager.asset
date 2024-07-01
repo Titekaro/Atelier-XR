@@ -10,6 +10,9 @@ TagManager:
   - HandRight
   - HandLeft
   - SwitchBtn
+  - Code Univac
+  - Code Compaq
+  - Code Macintosh
   layers:
   - Default
   - TransparentFX
