@@ -7,12 +7,14 @@ public class ShowUIInfo : MonoBehaviour
 
     [SerializeField] private GameObject infoPanel;
 
-    void Start() {
-        
+    void Awake() {
+        infoPanel.SetActive(false);
+    }
+
+    void Start() { 
     }
 
     void Update() {
-        
     }
 
     void OnTriggerEnter() {
