@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4249454423318552573}
-  - component: {fileID: 4962360851686368582}
+  - component: {fileID: 4817590173891862580}
   m_Layer: 0
   m_Name: Univac Armoire Bobine
   m_TagString: Untagged
@@ -27,13 +27,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.022014579, y: 0.022014573, z: 0.022014579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7880580027539942189}
+  - {fileID: 7177113793998912956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4962360851686368582
+--- !u!65 &4817590173891862580
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -52,8 +52,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 40.253315, y: 81.49832, z: 41.231735}
-  m_Center: {x: -0.14620407, y: 40.96064, z: -0.48479483}
+  m_Size: {x: 0.8736671, y: 1.7582437, z: 0.88599235}
+  m_Center: {x: -0.004621923, y: 0.90733665, z: -0.001540631}
 --- !u!1001 &2734441484057465164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -158,9 +158,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -4161369568681901532, guid: b48f8df8dd0b4a64d80a3da6e8f8e725,
     type: 3}
---- !u!4 &7880580027539942189 stripped
+--- !u!4 &7177113793998912956 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -3985754102308521375, guid: b48f8df8dd0b4a64d80a3da6e8f8e725,
+  m_CorrespondingSourceObject: {fileID: 5073457756506828016, guid: b48f8df8dd0b4a64d80a3da6e8f8e725,
     type: 3}
   m_PrefabInstance: {fileID: 2734441484057465164}
   m_PrefabAsset: {fileID: 0}
