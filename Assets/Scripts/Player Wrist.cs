@@ -27,7 +27,7 @@ public class PlayerWristManager : MonoBehaviour
         codeContentTitle = codeContent.transform.Find("Title").GetComponent<TextMeshProUGUI>();
         code = codeContent.transform.Find("Code").GetComponent<GameObject>();
         
-        totalCodeToFind = SceneManager.sceneCountInBuildSettings - 3;
+        totalCodeToFind = SceneManager.sceneCountInBuildSettings - 4;
     }
 
     void Start() {
