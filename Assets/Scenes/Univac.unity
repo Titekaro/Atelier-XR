@@ -8068,7 +8068,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834700854}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.2096}
+  m_LocalPosition: {x: 0, y: 0, z: 0.249}
   m_LocalScale: {x: 0.0004720119, y: 0.00076804415, z: 0.0041382466}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8078,7 +8078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.07731, y: 0.28538}
+  m_AnchoredPosition: {x: -0.077, y: 0.487}
   m_SizeDelta: {x: 531.2143, y: 101.87843}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834700856
@@ -11650,7 +11650,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Placez votre poignet gaucge \xE0 l'endroit indiqu\xE9 pour r\xE9cup\xE9rer
+  m_text: "Placez votre poignet gauche \xE0 l'endroit indiqu\xE9 pour r\xE9cup\xE9rer
     le fragment de code."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ecae9c9b49e6ea64cabfaf586f4bcd3f, type: 2}
@@ -17817,7 +17817,7 @@ PrefabInstance:
     - target: {fileID: 2639197436194773550, guid: c48a98004a5bf5d4f9c8343447717782,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.862
+      value: 0.912
       objectReference: {fileID: 0}
     - target: {fileID: 2639197436194773550, guid: c48a98004a5bf5d4f9c8343447717782,
         type: 3}
