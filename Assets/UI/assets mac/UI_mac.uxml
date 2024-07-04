@@ -1,0 +1,42 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/assets%20mac/stylesheet_mac.uss?fileID=7433441132597879392&amp;guid=5af26eafffae06d4c93c2b09543dced6&amp;type=3#stylesheet_mac" />
+    <ui:VisualElement name="background" class="background" style="flex-grow: 1;" />
+    <ui:VisualElement name="topbar" style="flex-grow: 1;" />
+    <ui:Button text=" " parse-escape-sequences="true" display-tooltip-when-elided="false" name="diskette" focusable="true" enable-rich-text="false" class="icon disketteicon" style="top: 36px; left: 402px; overflow: visible;">
+        <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1;" />
+        <ui:Label text="Diskette" enable-rich-text="false" picking-mode="Ignore" />
+    </ui:Button>
+    <ui:VisualElement name="window1" class="window" style="flex-grow: 1; top: 82px; left: 58px;">
+        <ui:Button text=" " parse-escape-sequences="true" display-tooltip-when-elided="false" name="folder" enable-rich-text="false" class="icon foldericon" style="top: 13px; left: -5px; overflow: visible;">
+            <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1;" />
+            <ui:Label text="Secrets stuff" enable-rich-text="false" picking-mode="Ignore" />
+        </ui:Button>
+        <ui:VisualElement name="Header" class="header" style="flex-grow: 1; align-items: center; justify-content: flex-start;">
+            <ui:Label tabindex="-1" text="Diskette" parse-escape-sequences="true" display-tooltip-when-elided="false" enable-rich-text="false" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="window2" class="window" style="flex-grow: 1; top: 135px; left: 133px;">
+        <ui:VisualElement name="Header" class="header" style="flex-grow: 1; align-items: center; justify-content: flex-start;">
+            <ui:Label tabindex="-1" text="Secret stuff" parse-escape-sequences="true" display-tooltip-when-elided="false" enable-rich-text="false" />
+        </ui:VisualElement>
+        <ui:Button text=" " parse-escape-sequences="true" display-tooltip-when-elided="false" name="folder2" enable-rich-text="false" class="icon foldericon" style="top: 13px; left: -5px; overflow: visible;">
+            <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1;" />
+            <ui:Label text="Steve&apos;s" enable-rich-text="false" picking-mode="Ignore" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:VisualElement name="window3" class="window" style="flex-grow: 1; top: 190px; left: 239px;">
+        <ui:VisualElement name="Header" class="header" style="flex-grow: 1; align-items: center; justify-content: flex-start;">
+            <ui:Label tabindex="-1" text="Steve&apos;s" parse-escape-sequences="true" display-tooltip-when-elided="false" enable-rich-text="false" />
+        </ui:VisualElement>
+        <ui:Button text=" " parse-escape-sequences="true" display-tooltip-when-elided="false" name="appicon" enable-rich-text="false" class="icon foldericon" style="top: 13px; left: -5px; overflow: visible;">
+            <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1;" />
+            <ui:Label text="Secret code" enable-rich-text="false" parse-escape-sequences="false" picking-mode="Ignore" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:VisualElement name="app" class="window" style="flex-grow: 1; top: 30px; left: 93px; height: 269px; width: 370px;">
+        <ui:VisualElement name="Header" class="header" style="flex-grow: 1; align-items: center; justify-content: flex-start;">
+            <ui:Label tabindex="-1" text="Secret code" parse-escape-sequences="true" display-tooltip-when-elided="true" focusable="false" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="pointer" picking-mode="Ignore" style="flex-grow: 1; transform-origin: left top; translate: 0 15px;" />
+</ui:UXML>
