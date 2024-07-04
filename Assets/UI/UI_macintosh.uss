@@ -1,0 +1,18 @@
+.appicon {
+    color: rgb(255, 255, 255);
+    width: 64px;
+    height: 64px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-color: rgb(128, 128, 128);
+}
+
+.appicon:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.appicon:active {
+    background-color: rgb(59, 153, 0);
+}
