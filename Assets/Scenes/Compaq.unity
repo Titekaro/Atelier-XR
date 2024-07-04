@@ -238,7 +238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea6cea63130c31408da382f0d424ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 8300000, guid: e60f08109553b804e8c00fea60886887, type: 3}
   playerPositionResetter: {fileID: 259675419}
 --- !u!4 &45739658
 Transform:
@@ -5282,7 +5281,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 31689bec9dde3264aa6f8ab3f11d1d2e, type: 2}
+      objectReference: {fileID: 1228489990749522588, guid: 79da1c4e9e29d4c4486683c681ae92e8,
+        type: 3}
     - target: {fileID: 6080253544720185773, guid: b276c3f1dc6155b479657d8eb6b3b2d8,
         type: 3}
       propertyPath: m_Size.y
@@ -6430,7 +6430,7 @@ PrefabInstance:
     - target: {fileID: 1313861197767683148, guid: b42c7cb5301f216418ce432efb185e6b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 1313861197767683148, guid: b42c7cb5301f216418ce432efb185e6b,
         type: 3}
@@ -6440,7 +6440,7 @@ PrefabInstance:
     - target: {fileID: 1313861197767683148, guid: b42c7cb5301f216418ce432efb185e6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.587
       objectReference: {fileID: 0}
     - target: {fileID: 1313861197767683148, guid: b42c7cb5301f216418ce432efb185e6b,
         type: 3}
