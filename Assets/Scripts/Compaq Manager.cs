@@ -12,9 +12,13 @@ public class CompaqManager : MonoBehaviour
 
     [SerializeField] private GameObject playerPositionResetter;
 
+    private AudioSource audioSource;
+    public AudioClip soundClip;
+
     void Awake() {
         scenesManagerScript = GameObject.Find("Scripts Access").GetComponent<ScenesManager>(); // Access the wanted script in "Scripts Access"
         playerScript = GameObject.Find("Scripts Access").GetComponent<Player>();
+        audioSource = GetComponent<AudioSource>();
 
         leftHand = GameObject.Find("Left Controller");
     }
@@ -39,13 +43,15 @@ public class CompaqManager : MonoBehaviour
         }
 
         // Call switch scene method with delay
-        StartCoroutine(DelayAction(1));
+        StartCoroutine(DelayAction(10));
     }
 
     IEnumerator DelayAction(float delayTime) {
+        audioSource.Play();
+        
         //Wait for the specified delay time before continuing.
         yield return new WaitForSeconds(delayTime);
-        scenesManagerScript.SwitchScene(2);
+        scenesManagerScript.SwitchScene(6);
     }
 
 }
