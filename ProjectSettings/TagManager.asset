@@ -4,11 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Next
-  - Hand
   - Wrist
   - Set
   - NotSet
+  - HandRight
+  - HandLeft
+  - SwitchBtn
+  - Code Univac
+  - Code Compaq
+  - Code Macintosh
   layers:
   - Default
   - TransparentFX
@@ -20,7 +24,7 @@ TagManager:
   - ScenesManager
   - Hand
   - HandScanner
-  - 
+  - Wrist
   - 
   - 
   - 

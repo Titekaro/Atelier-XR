@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class CompaqManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    private Player playerScript;
+
+    [SerializeField] private GameObject playerPositionResetter;
+
+    void Awake() {
+        playerScript = GameObject.Find("Scripts Access").GetComponent<Player>();
+        playerScript.ResetPlayerPosition(playerPositionResetter);
+    }
+
+    void Start() {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+    
     }
+
+
 }

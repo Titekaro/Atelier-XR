@@ -1,0 +1,128 @@
+#topbar {
+    background-image: url('project://database/Assets/UI/assets%20mac/topbar.png?fileID=2800000&guid=52f74156a85b1094f8a96bbf87432f82&type=3#topbar');
+    height: 20px;
+    width: 512px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#background {
+    background-image: url("project://database/Assets/Art/UI/Compaq/Accueil%202.png?fileID=2800000&guid=c864928714c015d4395fcda67b8e27b8&type=3#Accueil 2");
+    width: 512px;
+    height: 380px;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.window {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    overflow: visible;
+    display: flex;
+}
+
+.icon {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    align-items: center;
+}
+
+.icon VisualElement {
+    width: 152px;
+    height: 112px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon Label {
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 9px;
+    -unity-text-align: upper-center;
+}
+
+.icon:hover Label {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.window .header {
+    height: 18px;
+    background-image: url('project://database/Assets/UI/assets%20mac/window_header.png?fileID=2800000&guid=68677b7c4442cad409aeed2eb2e4c2a0&type=3#window_header');
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.closed {
+    visibility: visible;
+    overflow: visible;
+    display: none;
+}
+
+.connexionIcon VisualElement {
+    background-image: url("project://database/Assets/Art/UI/Compaq/inactive/Icon_connexion-internet.png?fileID=2800000&guid=107ddafba5792e846b70d8533225bb2e&type=3#Icon_connexion-internet");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.connexionIcon:hover VisualElement {
+    background-image: url("project://database/Assets/Art/UI/Compaq/active/Icon_connexion-internet.png?fileID=2800000&guid=c46ab5691fc857246b3e755a6ce87233&type=3#Icon_connexion-internet");
+}
+
+.explorerIcon VisualElement {
+    background-image: url("project://database/Assets/Art/UI/Compaq/inactive/Icon_IE6.png?fileID=2800000&guid=514994e13cc44044da0f4a1f6c93e22c&type=3#Icon_IE6");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.explorerIcon:hover VisualElement {
+    background-image: url("project://database/Assets/Art/UI/Compaq/active/Icon_IE6.png?fileID=2800000&guid=9d6d5d41ae9874a42b2dd40620b36dbc&type=3#Icon_IE6");
+}
+
+.window .header Label {
+    background-color: rgb(255, 255, 255);
+    align-self: auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: 17px;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#pointer {
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    background-image: url('project://database/Assets/UI/assets%20mac/cursor.png?fileID=2800000&guid=fb72479f4417508468506bf4fce31576&type=3#cursor');
+    left: 50px;
+    top: 50px;
+}
+
+.commIcon VisualElement {
+    background-image: url("project://database/Assets/Art/UI/Compaq/inactive/btn_commentaire--inactive.png?fileID=2800000&guid=30227489fbb72d64d88cd5a3effc365e&type=3#btn_commentaire--inactive");
+    -unity-background-scale-mode: scale-to-fit;
+    width: 66px;
+    height: 8px;
+}
+
+.commIcon:hover VisualElement {
+    background-image: url("project://database/Assets/Art/UI/Compaq/active/btn_commentaire--active.png?fileID=2800000&guid=6448c9d118dc838479e20d010976cd33&type=3#btn_commentaire--active");
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgb(255, 0, 0);
+}
