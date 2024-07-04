@@ -3089,7 +3089,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Home lorem ipsum
+  m_text: "Bienvenue dans notre nouvelle \xE8re de l\u2019informatique !\n\nNotre
+    intelligence artificielle poss\xE8de un noyau central appel\xE9 \"Codex Informatica\",
+    constitu\xE9 de plusieurs couches de m\xE9moire renfermant toute l\u2019histoire
+    de l\u2019informatique. Malheureusement, certaines couches ne fonctionnent plus
+    correctement. Nous avons besoin de vous pour restaurer notre IA afin de sauver
+    le Codex Informatica.\n\nVotre mission est de reconstituer le code n\xE9cessaire
+    \xE0 la restauration de l\u2019IA. Pour cela, vous devrez r\xE9cup\xE9rer manuellement
+    le fragment de code de chaque couche de m\xE9moire endommag\xE9e."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ecae9c9b49e6ea64cabfaf586f4bcd3f, type: 2}
   m_sharedMaterial: {fileID: 7880364889168172664, guid: ecae9c9b49e6ea64cabfaf586f4bcd3f,
@@ -3117,14 +3124,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
