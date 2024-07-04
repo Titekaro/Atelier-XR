@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Assets%20Compaq/stylesheet_Compaq.uss?fileID=7433441132597879392&amp;guid=5af26eafffae06d4c93c2b09543dced6&amp;type=3#stylesheet_Compaq" />
+    <ui:VisualElement name="background" class="background" style="flex-grow: 1; width: 1920px;" />
+    <ui:VisualElement name="window1" class="window" style="flex-grow: 1; top: 123px; left: 502px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: url(&quot;project://database/Assets/UI/Assets%20Compaq/Fenetre%20skyblog--noCloseBtn.png?fileID=2800000&amp;guid=2d697a33f4e1408489b4edafaadd65c4&amp;type=3#Fenetre skyblog--noCloseBtn&quot;); height: 600px; width: 840px; -unity-background-scale-mode: stretch-to-fill;">
+        <ui:Button text=" " parse-escape-sequences="true" display-tooltip-when-elided="false" name="commentaires" focusable="true" enable-rich-text="false" class="icon commIcon" style="top: 479px; left: 378px; overflow: visible; height: 39px;">
+            <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1;" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:VisualElement name="app" class="window" style="flex-grow: 1; top: 772px; left: 436px; height: 169px; width: 528px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: url(&quot;project://database/Assets/UI/Assets%20Compaq/Fenetre_connexion.png?fileID=2800000&amp;guid=5b361bd9fb119c84aacba3635158bf22&amp;type=3#Fenetre_connexion&quot;); background-color: rgba(255, 255, 255, 0);" />
+    <ui:Button text=" " parse-escape-sequences="true" display-tooltip-when-elided="false" name="Internet_Explorer" focusable="true" enable-rich-text="false" class="icon explorerIcon" style="top: 424px; left: 36px; overflow: visible; height: 98px; width: 152px;">
+        <ui:VisualElement picking-mode="Ignore" name="VisualElement" style="flex-grow: 1; -unity-background-scale-mode: stretch-to-fill;" />
+    </ui:Button>
+    <ui:Button text=" " parse-escape-sequences="true" display-tooltip-when-elided="false" name="Internet_Connexion" focusable="true" enable-rich-text="false" class="icon connexionIcon" style="top: 279px; left: 25px; overflow: visible;">
+        <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1;" />
+    </ui:Button>
+    <ui:VisualElement name="window2" class="window" style="flex-grow: 1; top: 394px; left: 988px; background-image: url(&quot;project://database/Assets/UI/Assets%20Compaq/FENETRE%20COMMENTAIRE.png?fileID=2800000&amp;guid=199d0b70daf60984eae6d9d3818e05c9&amp;type=3#FENETRE COMMENTAIRE&quot;); width: 332px; height: 600px;" />
+    <ui:VisualElement name="pointer" picking-mode="Ignore" style="flex-grow: 1; transform-origin: left top; translate: 0 15px;" />
+</ui:UXML>
