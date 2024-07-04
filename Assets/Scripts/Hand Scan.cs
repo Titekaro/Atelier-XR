@@ -9,6 +9,8 @@ public class HandScan : MonoBehaviour
     private GameObject leftHand;
     private GameObject rightHand;
 
+    private bool isLoading = false;
+
     void Awake() {
         scenesManagerScript = GameObject.Find("Scripts Access").GetComponent<ScenesManager>(); // Access the wanted script in "Scripts Access"
         leftHand = GameObject.Find("Left Controller");
@@ -22,6 +24,8 @@ public class HandScan : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
+        if(isLoading) return;
+        isLoading = true;
         //Ajouter detection uniquement quand c'est les mains
         Debug.Log("collision " + other.tag);
 
